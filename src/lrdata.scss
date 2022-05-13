@@ -1,0 +1,43 @@
+@import './base/normalize';
+@import './base/reset';
+
+$font-base-size: 62.5%;
+$color-link: #000;
+$color-outline : #00b33d;
+$break-tablet: 768px;
+$break-mobile: 360px;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif;
+  // line-height: 18px;
+  padding: 0;
+  margin: 0;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+html {
+  -ms-text-size-adjust: 100%;
+  font-size: $font-base-size;
+  -webkit-text-size-adjust: 100%;
+
+  @media (max-width: $break-tablet) {
+      font-size: 58%;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400 !important;
+}
+
+.show {
+  display: block;
+}
+.close {
+  display: none;
+}
